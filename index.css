@@ -1,6 +1,38 @@
 body {
     text-align: center;
 }
+
+footer {
+    stic
+}
+
+.js-weather {
+    text-align: right;
+}
+.temp {
+    font-size: 25px;
+    line-height: 0;
+    color: white;
+    text-shadow: 0 0 4px darkgray;
+}
+
+.area {
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 35vh;
+    text-align: center;
+}
+.clock h1 {
+    font-size: 80px;
+    color: white;
+    text-shadow: 0 0 4px darkgray;
+}
+.js-greetings {
+    color: white;
+    text-shadow: 0 0 4px darkgray;
+}
 .form {
     display: none;
 }
@@ -12,6 +44,7 @@ body {
 .showing {
     display: block;
 }
+
 
 .bgImage {
     position: absolute;

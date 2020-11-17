@@ -8,7 +8,11 @@ function getWeather(lat, lon) {
             return response.json();
         }).then(function(data) {
             console.log(data);
-            weatherContainer.innerHTML = `${data.name} ${Math.round(data.main.temp)}°C`;           
+            weatherContainer.innerHTML = `
+            <div class="temp">
+                <img id="wicon" src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">${Math.round(data.main.temp)}°C
+                <br><span class="area">${data.name}</span>
+            </div>`;           
         });
 }
 

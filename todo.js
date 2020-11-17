@@ -7,6 +7,15 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        html: true,
+        content: function() {
+            return $('#popover-content').html();
+        }
+    });   
+});
+
 function deleteToDo(event) {
     const btn = event.target;
     const li = btn.parentNode;
@@ -34,6 +43,7 @@ function paintToDo(text) {
     delBtn.addEventListener("click", deleteToDo);
     
     span.innerText = text;
+    li.classList.add("list-group-item")
     li.appendChild(delBtn);
     li.appendChild(span);
     li.id = newId
