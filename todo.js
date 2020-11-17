@@ -31,7 +31,7 @@ function paintToDo(text) {
     const newId = toDos.length + 1;
 
 
-    delBtn.innerHTML = `<i class="fa fa-trash"></i>`;
+    delBtn.innerHTML = `&#10003;`;
     delBtn.addEventListener("click", deleteToDo);
     
     span.innerText = text;

@@ -9,8 +9,6 @@ body {
 .temp {
     font-size: 25px;
     line-height: 0;
-    color: white;
-    text-shadow: 0 0 4px darkgray;
 }
 
 .area {
