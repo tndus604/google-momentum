@@ -2,13 +2,10 @@ body {
     text-align: center;
 }
 
-footer {
-    stic
-}
-
 .js-weather {
     text-align: right;
 }
+
 .temp {
     font-size: 25px;
     line-height: 0;
@@ -21,18 +18,26 @@ footer {
 }
 
 .container {
-    margin-top: 35vh;
+    margin-top: 25vh;
     text-align: center;
 }
+
+input {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    border-bottom: solid gray 1px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
 .clock h1 {
-    font-size: 80px;
-    color: white;
-    text-shadow: 0 0 4px darkgray;
+    font-size: 100px;
+    font-weight: bold;
 }
-.js-greetings {
-    color: white;
-    text-shadow: 0 0 4px darkgray;
-}
+
 .form {
     display: none;
 }
@@ -43,6 +48,26 @@ footer {
 
 .showing {
     display: block;
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.js-toDoList {
+    background-color: opacity(90%);
+    width: 300px;
+    float: right;
+}
+
+.js-toDoList li {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+button {
+    border: none;
 }
 
 

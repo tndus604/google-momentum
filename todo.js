@@ -7,14 +7,6 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover({
-        html: true,
-        content: function() {
-            return $('#popover-content').html();
-        }
-    });   
-});
 
 function deleteToDo(event) {
     const btn = event.target;
@@ -39,7 +31,7 @@ function paintToDo(text) {
     const newId = toDos.length + 1;
 
 
-    delBtn.innerHTML = "&#10060";
+    delBtn.innerHTML = `<i class="fa fa-trash"></i>`;
     delBtn.addEventListener("click", deleteToDo);
     
     span.innerText = text;
